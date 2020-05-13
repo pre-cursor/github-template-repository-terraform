@@ -4,9 +4,9 @@ VERSION:=$(shell semtag final -s minor -o)
 .PHONY: help
 help: ; @sed -n 's/^#:help://p' Makefile
 
-#:help: lint        | Lint the project files using pre-commit
-.PHONY: lint
-lint:
+#:help: precommit   | Lint the project files using pre-commit
+.PHONY: precommit
+precommit:
 	@pre-commit run --all-files
 
 #:help: changelog   | Build the changelog

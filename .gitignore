@@ -1,2 +1,5 @@
 .idea/
 *.swp
+*.tfvars
+*.tfstate*
+.terraform/
